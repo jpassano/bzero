@@ -66,7 +66,7 @@ img {
     float: left;
 }
 .logo {
-    max-width: 2.5%;
+    max-width: 10%;
 }
 
 input {
@@ -78,27 +78,16 @@ textarea {
 }
 
 .landing {
-    margin: -55px 0 0 0;
+    margin:-70px 0 0 0; 
     padding: 0px;
-    top: 0px;
+    /* top: -60px; */
     position: relative;
 }
 
 header {
-    /*filter: brightness(0.4);
-    filter: blur(5px);
-    filter: contrast(200%);
-    filter: drop-shadow(16px 16px 20px blue);
-    filter: grayscale(50%);
-    filter: hue-rotate(90deg);
-    filter: invert(75%);
-    filter: opacity(50%);
-    filter: saturate(30%);
-    filter: sepia(60%);*/
     text-align: center;
     background-image: url("../img/bank7.png");
     background-size: cover;
-    /* height: 650px; */
 }
 
 header h1 {
@@ -375,7 +364,7 @@ p {
 
 /* @media all and (max-width: 890px) {} */
 
-@media all and (max-width: 323px) {
+@media all and (max-width: 450px) {
 
     p,
     ul,
@@ -386,7 +375,11 @@ p {
     h4 {
         text-align: center;
     }
-
+    .landing {
+        top: 0px;
+        position: relative;
+    }
+    
     .content {
         margin: 0px;
     }
@@ -406,11 +399,11 @@ p {
     }
     
     .tblgrid {
-        grid: repeat(12, 100%) / auto-flow dense;
+        grid: none;
+        display: block;
     }
 
     img {
-        max-width: 100%;
         display: block;
         margin: auto;
         float: none;
@@ -431,11 +424,19 @@ p {
     .contact ul li {
         line-height: 1em;
     }
+    .long_ref{
+        font-size: medium;
+    }
 
     .signup label input,
     .signup label select,
     .signup label textarea {
         width: 100%;
     }
-
+    .logo{
+        max-width: 100%;
+    }
+    .landing {
+        margin: 0px; 
+    }
 }
