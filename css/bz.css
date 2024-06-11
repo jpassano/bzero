@@ -52,7 +52,7 @@ ul {
 }
 
 ul li {
-    margin-bottom: 1em;
+    /* margin-bottom: 1em; */
 }
 
 .ul3 {
@@ -153,6 +153,7 @@ header h3 {
 .cuadroCentral div {    
     display: inline-block; 
     max-width: 49%;
+    vertical-align: top;
 }
 .tblgrid {
     display: grid;
